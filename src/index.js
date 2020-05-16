@@ -12,7 +12,6 @@ export default function empty(value) {
     if ('boolean' == typeof value) return !value;
     if ('number' == typeof value) return value === 0;
     if ('string' == typeof value) return value === '0' || value.length === 0;
-    if ('function' == typeof value) return value.length === 0;
 
     // Empty arrays:
     if (Array.isArray(value)) return value.length === 0;

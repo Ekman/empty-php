@@ -46,10 +46,4 @@ describe('empty-js', function () {
     assert(empty(0) == true)
     assert(empty(42) == false)
   })
-
-  it('Testing functions', function () {
-    assert(empty(function(){}) == true)
-    assert(empty(function(a,b){}) == false)
-  })
-
 })
