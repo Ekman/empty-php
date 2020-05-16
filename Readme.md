@@ -1,5 +1,7 @@
 # Empty PHP
 
+[![Build Status](https://travis-ci.org/Ekman/empty-php.svg?branch=master)](https://travis-ci.org/Ekman/empty-php)
+
 The purpose of this library is to be a zero dependency and exact replica of the [PHP empty function](https://www.php.net/manual/en/function.empty.php). The library is compatible with evergreen browsers, IE 11 and all Node LTS.
 
 According to the PHP documentation, the following values are considered to be empty:
