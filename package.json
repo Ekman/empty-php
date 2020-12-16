@@ -35,7 +35,10 @@
         "false",
         "value"
     ],
-    "author": "Niklas Ekman <nikl.ekman@gmail.com>",
+    "author": {
+        "name": "Niklas Ekman",
+        "email": "nikl.ekman@gmail.com"
+    },
     "license": "MIT",
     "homepage": "https://github.com/Ekman/empty-php#readme",
     "browserslist": [
