@@ -2,7 +2,7 @@
  * The definition of an empty value in PHP
  * @see https://www.php.net/manual/en/function.empty.php
  */
-export type Empty = undefined | null | "" | 0 | 0.0 | "0" | false | [];
+export type Empty = undefined | null | "" | 0 | 0.0 | "0" | false | [] | {};
 
 /**
  * Determines if the input value is empty
