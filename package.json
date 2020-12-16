@@ -44,7 +44,10 @@
     "browserslist": [
         "last 2 major versions",
         "ie 11",
-        "node >= 10"
+        "node 10",
+        "node 12",
+        "node 14",
+        "not dead"
     ],
     "files": [
         "dist/*",
