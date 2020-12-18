@@ -37,7 +37,15 @@ export type EmptyObject = Undefined | {};
 export type Empty = Undefined | EmptyBoolean | EmptyString | EmptyNumber | EmptyArray | EmptyObject;
 
 /**
- * Determines a boolean is empty
+ * Determines if a complex object is empty
+ * @param value The value to determine if empty
+ * @returns true if the value is empty, false otherwise
+ * @see https://www.php.net/manual/en/function.empty.php
+ */
+declare function empty<T>(value?: T | Undefined): value is Undefined;
+
+/**
+ * Determines if a boolean is empty
  * @param value The value to determine if empty
  * @returns true if the value is empty, false otherwise
  * @see https://www.php.net/manual/en/function.empty.php
@@ -45,7 +53,7 @@ export type Empty = Undefined | EmptyBoolean | EmptyString | EmptyNumber | Empty
 declare function empty(value?: boolean | Undefined): value is EmptyBoolean;
 
 /**
- * Determines a string is empty
+ * Determines if a string is empty
  * @param value The value to determine if empty
  * @returns true if the value is empty, false otherwise
  * @see https://www.php.net/manual/en/function.empty.php
@@ -53,7 +61,7 @@ declare function empty(value?: boolean | Undefined): value is EmptyBoolean;
 declare function empty(value?: string | Undefined): value is EmptyString;
 
 /**
- * Determines a number is empty
+ * Determines if a number is empty
  * @param value The value to determine if empty
  * @returns true if the value is empty, false otherwise
  * @see https://www.php.net/manual/en/function.empty.php
@@ -61,7 +69,7 @@ declare function empty(value?: string | Undefined): value is EmptyString;
 declare function empty(value?: number | Undefined): value is EmptyNumber;
 
 /**
- * Determines an array is empty
+ * Determines if an array is empty
  * @param value The value to determine if empty
  * @returns true if the value is empty, false otherwise
  * @see https://www.php.net/manual/en/function.empty.php
@@ -69,7 +77,7 @@ declare function empty(value?: number | Undefined): value is EmptyNumber;
 declare function empty(value?: unknown[] | Undefined): value is EmptyArray;
 
 /**
- * Determines an object is empty
+ * Determines if an object is empty
  * @param value The value to determine if empty
  * @returns true if the value is empty, false otherwise
  * @see https://www.php.net/manual/en/function.empty.php
