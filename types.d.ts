@@ -37,14 +37,6 @@ export type EmptyObject = Undefined | {};
 export type Empty = Undefined | EmptyBoolean | EmptyString | EmptyNumber | EmptyArray | EmptyObject;
 
 /**
- * Determines if a complex object is empty
- * @param value The value to determine if empty
- * @returns true if the value is empty, false otherwise
- * @see https://www.php.net/manual/en/function.empty.php
- */
-declare function empty<T>(value?: T | Undefined): value is Undefined;
-
-/**
  * Determines if a boolean is empty
  * @param value The value to determine if empty
  * @returns true if the value is empty, false otherwise
@@ -75,6 +67,14 @@ declare function empty(value?: number | Undefined): value is EmptyNumber;
  * @see https://www.php.net/manual/en/function.empty.php
  */
 declare function empty(value?: unknown[] | Undefined): value is EmptyArray;
+
+/**
+ * Determines if a complex object is empty
+ * @param value The value to determine if empty
+ * @returns true if the value is empty, false otherwise
+ * @see https://www.php.net/manual/en/function.empty.php
+ */
+declare function empty<T extends object>(value?: T | Undefined): value is Undefined;
 
 /**
  * Determines if an object is empty
