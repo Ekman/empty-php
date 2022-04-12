@@ -42,7 +42,7 @@ export type Empty = Undefined | EmptyBoolean | EmptyString | EmptyNumber | Empty
  * @returns true if the value is empty, false otherwise
  * @see https://www.php.net/manual/en/function.empty.php
  */
-declare function empty(value?: boolean | Undefined): value is EmptyBoolean;
+ export function empty(value?: boolean | Undefined): value is EmptyBoolean;
 
 /**
  * Determines if a string is empty
@@ -50,7 +50,7 @@ declare function empty(value?: boolean | Undefined): value is EmptyBoolean;
  * @returns true if the value is empty, false otherwise
  * @see https://www.php.net/manual/en/function.empty.php
  */
-declare function empty(value?: string | Undefined): value is EmptyString;
+ export function empty(value?: string | Undefined): value is EmptyString;
 
 /**
  * Determines if a number is empty
@@ -58,7 +58,7 @@ declare function empty(value?: string | Undefined): value is EmptyString;
  * @returns true if the value is empty, false otherwise
  * @see https://www.php.net/manual/en/function.empty.php
  */
-declare function empty(value?: number | Undefined): value is EmptyNumber;
+ export function empty(value?: number | Undefined): value is EmptyNumber;
 
 /**
  * Determines if an array is empty
@@ -66,7 +66,7 @@ declare function empty(value?: number | Undefined): value is EmptyNumber;
  * @returns true if the value is empty, false otherwise
  * @see https://www.php.net/manual/en/function.empty.php
  */
-declare function empty(value?: unknown[] | Undefined): value is EmptyArray;
+ export function empty(value?: unknown[] | Undefined): value is EmptyArray;
 
 /**
  * Determines if a complex object is empty
@@ -74,7 +74,7 @@ declare function empty(value?: unknown[] | Undefined): value is EmptyArray;
  * @returns true if the value is empty, false otherwise
  * @see https://www.php.net/manual/en/function.empty.php
  */
-declare function empty<T extends object>(value?: T | Undefined): value is Undefined;
+ export function empty<T extends object>(value?: T | Undefined): value is Undefined;
 
 /**
  * Determines if an object is empty
@@ -82,7 +82,7 @@ declare function empty<T extends object>(value?: T | Undefined): value is Undefi
  * @returns true if the value is empty, false otherwise
  * @see https://www.php.net/manual/en/function.empty.php
  */
-declare function empty(value?: object | Undefined): value is EmptyObject;
+ export function empty(value?: object | Undefined): value is EmptyObject;
 
 /**
  * Determines an unknown value is empty
@@ -90,6 +90,4 @@ declare function empty(value?: object | Undefined): value is EmptyObject;
  * @returns true if the value is empty, false otherwise
  * @see https://www.php.net/manual/en/function.empty.php
  */
-declare function empty(value?: unknown): value is Empty;
-
-export default empty;
+export function empty(value?: unknown): value is Empty;
