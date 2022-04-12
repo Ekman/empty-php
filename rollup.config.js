@@ -8,7 +8,6 @@ const formats = [
 ];
 
 const defaultFormat = {
-    exports: "default",
     name: pkg.name,
 };
 
