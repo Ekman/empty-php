@@ -2,7 +2,7 @@
 
 [![Build Status](https://circleci.com/gh/Ekman/empty-php.svg?style=svg)](https://app.circleci.com/pipelines/github/Ekman/empty-php)
 
-The purpose of this library is to be a zero dependency and exact replica of the [PHP empty function](https://www.php.net/manual/en/function.empty.php). The library is compatible with evergreen browsers, IE 11 and all Node LTS.
+The purpose of this library is to be a zero dependency and exact replica of the [PHP empty function](https://www.php.net/manual/en/function.empty.php).
 
 According to the PHP documentation, the following values are considered to be empty:
 
