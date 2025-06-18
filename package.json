@@ -1,7 +1,7 @@
 {
     "name": "empty-php",
     "version": "2.0.1",
-    "description": "PHP empty function in JS",
+    "description": "Exact replica of the PHP empty function in for JavaScript and TypeScript",
     "type": "module",
     "source": "src/index.ts",
     "types": "dist/index.d.ts",
