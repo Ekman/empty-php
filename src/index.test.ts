@@ -53,6 +53,6 @@ describe('empty-js', function () {
 
   it('Testing functions', function () {
     expect(empty(function(){})).toBeFalsy()
-    expect(empty(function(a,b){})).toBeFalsy()
+    expect(empty(function(a: unknown, b :unknown){})).toBeFalsy()
   })
 })
