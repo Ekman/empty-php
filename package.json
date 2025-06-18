@@ -2,26 +2,33 @@
     "name": "empty-php",
     "version": "2.0.1",
     "description": "PHP empty function in JS",
-    "main": "dist/index.cjs.js",
-    "module": "dist/index.esm.js",
-    "types": "types.d.ts",
+    "type": "module",
+    "source": "src/index.ts",
+    "types": "dist/index.d.ts",
+    "exports": {
+        "require": "./dist/index.cjs",
+        "default": "./dist/index.modern.js"
+    },
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.esm.js",
+    "unpkg": "./dist/index.umd.js",
     "scripts": {
-        "test": "mocha",
-        "pretest": "npm run build",
-        "build": "rollup --config rollup.config.js",
-        "deps": "npm install --ignore-scripts --no-optional --no-audit",
-        "prepublish": "npm run build"
+        "build": "microbundle",
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Ekman/empty-php.git"
     },
     "devDependencies": {
-        "@babel/core": "^7.17.9",
-        "@babel/preset-env": "^7.16.11",
-        "@rollup/plugin-babel": "^5.3.1",
-        "mocha": "^11.7.0",
-        "rollup": "^2.70.1"
+        "@tsconfig/node22": "^22.0.2",
+        "@types/jest": "^30.0.0",
+        "jest": "^30.0.0",
+        "jest-junit": "^16.0.0",
+        "microbundle": "^0.15.1",
+        "ts-jest": "^29.4.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3"
     },
     "keywords": [
         "empty",
@@ -41,16 +48,11 @@
     },
     "license": "MIT",
     "homepage": "https://github.com/Ekman/empty-php#readme",
-    "browserslist": [
-        "last 2 major versions",
-        "ie 11",
-        "node 10",
-        "node 12",
-        "node 14",
-        "not dead"
-    ],
-    "files": [
-        "dist/*",
-        "types.d.ts"
+    "maintainers": [
+        {
+            "name": "Niklas Ekman",
+            "url": "https://www.niklasekman.solutions",
+            "email": "niklas@niklasekman.solutions"
+        }
     ]
 }
