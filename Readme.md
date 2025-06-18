@@ -1,6 +1,6 @@
 # Empty PHP
 
-[![Build Status](https://travis-ci.org/Ekman/empty-php.svg?branch=master)](https://travis-ci.org/Ekman/empty-php)
+[![Build Status](https://circleci.com/gh/Ekman/empty-php.svg?style=svg)](https://app.circleci.com/pipelines/github/Ekman/empty-php)
 
 The purpose of this library is to be a zero dependency and exact replica of the [PHP empty function](https://www.php.net/manual/en/function.empty.php). The library is compatible with evergreen browsers, IE 11 and all Node LTS.
 
@@ -14,35 +14,31 @@ According to the PHP documentation, the following values are considered to be em
 * FALSE
 * array() (an empty array)
 
+## Installation
+
+Install with your favorite package manager:
+
+```bash
+npm install --save empty-php
+```
+
 ## Usage
 
 To use the library:
 
 ```javascript
-import empty from "empty-php";
+import { empty } from "empty-php";
 
 if (empty(myVar)) {
     // It's empty
 }
 ```
 
+## Versioning
 
-## Test
+This project complies with [Semantic Versioning](https://semver.org/).
 
-To test:
+## Changelog
 
-```bash
-npm test
-```
+For a complete list of changes, and how to migrate between major versions, see [releases page](https://github.com/Ekman/empty-php/releases).
 
-## Build
-
-To build:
-
-```bash
-npm run build
-```
-
-## Credits
-
-This library was forked from [https://github.com/vvmspace/empty-js](https://github.com/vvmspace/empty-js).
