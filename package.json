@@ -54,5 +54,6 @@
             "url": "https://www.niklasekman.solutions",
             "email": "niklas@niklasekman.solutions"
         }
-    ]
+    ],
+    "files": ["dist", "src"]
 }
