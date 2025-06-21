@@ -55,5 +55,6 @@
             "email": "niklas@niklasekman.solutions"
         }
     ],
-    "files": ["dist", "src"]
+    "files": ["dist", "src"],
+    "sideEffects": false
 }
