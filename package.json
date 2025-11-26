@@ -21,14 +21,14 @@
         "url": "git+https://github.com/Ekman/empty-php.git"
     },
     "devDependencies": {
-        "@tsconfig/node22": "^22.0.2",
+        "@tsconfig/node22": "^22.0.5",
         "@types/jest": "^30.0.0",
-        "jest": "^30.0.0",
+        "jest": "^30.2.0",
         "jest-junit": "^16.0.0",
         "microbundle": "^0.15.1",
-        "ts-jest": "^29.4.0",
+        "ts-jest": "^29.4.5",
         "ts-node": "^10.9.2",
-        "typescript": "^5.8.3"
+        "typescript": "^5.9.3"
     },
     "keywords": [
         "empty",
