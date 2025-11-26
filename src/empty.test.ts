@@ -1,4 +1,4 @@
-import { empty } from "./index"
+import { empty } from "./empty"
 
 describe('empty-js', function () {
   it('Testing nulls', function () {
