@@ -42,3 +42,8 @@ This project complies with [Semantic Versioning](https://semver.org/).
 
 For a complete list of changes, and how to migrate between major versions, see [releases page](https://github.com/Ekman/empty-php/releases).
 
+## Buy me a coffee
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/nekman)
+
+If you appreciate my work, then consider [buying me a coffee](https://buymeacoffee.com/nekman). Donations are completely voluntary.
