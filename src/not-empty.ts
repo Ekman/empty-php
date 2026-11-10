@@ -49,6 +49,5 @@ export function notEmpty(value?: object | Undefined): value is Exclude<object, E
  * @see empty
  */
 export function notEmpty(value?: unknown): value is Exclude<unknown, Empty> {
-    // @ts-expect-error Overload resolution limitation
     return !empty(value);
 }
