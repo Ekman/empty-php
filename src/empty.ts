@@ -54,6 +54,7 @@ export function empty(value?: object | Undefined): value is EmptyObject;
  * @returns true if the value is empty, false otherwise
  * @see https://www.php.net/manual/en/function.empty.php
  */
+export function empty(value?: unknown): value is Empty;
 export function empty(value?: unknown): value is Empty {
     // If value is null on undefined:
     if (value == null) return true;
